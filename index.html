@@ -1,149 +1,208 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <title>Layout Master</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Scripts with the "defer" attribute will prevent the DOMContentLoaded event
       from firing until the script has loaded and finished evaluating. -->
-      <script src="https://kit.fontawesome.com/f97f2c7abf.js" crossorigin="anonymous"></script>
-      <script src="index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f97f2c7abf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- <div id="particles-js"> -->
     <!-- Navbar -->
-    <nav class="zone header">
-      <ul class="header-nav">
-        <li><a href="#cover">Profile</a></li>
-        <li><a href="#section">Section</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="burger-bar"><img src="./img/burger-bar.png" alt="menu"></li>
-        <!-- <li class="about"><button type="button" data-theme-toggle aria-label="Chane to light theme"><i class="fa-solid fa-toggle-off"></i></button></li> -->
+    <nav class="header" id="nav--bar">
+      <ul id="UList" class="lightmode-nav">
+        <!-- <li class="nav-logo"><i class="glyphicon glyphicon-user"></i></li> -->
+        <li class="nav-logo">GS</li>
+        <li class="navbar-toggle" id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </li>
+        <li class="nav-links">
+          <a href="#cover" class="link--a">Profile</a>
+        </li>
+        <li class="nav-links">
+          <a href="#section" class="link--a">Experience</a>
+        </li>
+        <li class="nav-links">
+          <a href="#skills" class="link--a">Skills</a>
+        </li>
+        <li class="nav-links">
+          <a href="#project" class="link--a">Project</a>
+        </li>
+        <li class="nav-links">
+          <a href="#contact" class="link--a">Contact</a>
+        </li>
+        <!-- <li class="nav-links">
+          <input type="checkbox" name="checkbox" class="switch">
+        </li> -->
       </ul>
     </nav>
-    <!-- Cover section -->
-    <div class="cover-sec" id="cover">
+    <!-- Cover Section -->
+    <div class="section cover-section" id="cover">
       <div class="cover-intro">
         <h1>Frontend Web Developer</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
+        <h2>Hi, <span>I'm Gagan</span></h2>
+        <h3>
+          Front-end Web developer with 3+ years of experience crafting
+          user-friendly web applications using HTML, CSS, JavaScript, React.js,
+          Redux, MongoDB with fair experience in Back-end development using
+          Python and Flask.
+        </h3>
+        <h3>
+          Proven ability to collaborate effectively within a team environment
+          and contribute to the continuous improvement of development processes.
+        </h3>
       </div>
-      <img class="cover-img" src="./img/undraw.png" alt="cover_img" />
+      <img class="cover-img" src="./img/gagan-avatar.jpeg" alt="cover_img" />
+      <div class="container-only-for-centering">
+        <div class="darkmode-toggle-wrapper">
+          <input
+            type="checkbox"
+            id="darkmode-toggle"
+            aria-label="dark mode toggle"
+            class="darkmode-toggle-checkbox"
+          />
+          <div class="darkmode-toggle-circle"></div>
+          <span class="darkmode-toggle-emoji">🌙</span>
+          <span class="darkmode-toggle-emoji">☀️</span>
+        </div>
+      </div>
     </div>
-
     <!-- Resume Section -->
-    <div class="section" id="section">
-      <div class="sec-1">
-        <h3>heading 3</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
+    <div class="section resume-section" id="section">
+      <div class="resume-divs">
+        <h2>Associate Consultant (Capgemini, Gurugram)</h2>
+        <h4>Jan 2024 - Present</h4>
+        <h3>
+          🔶 Developed responsive UI for SDH project, ensuring compatibility
+          across Azure and AWS environments.
+        </h3>
+        <h3>
+          🔶 Supported in the development of parameterized ADF Pipeline for data
+          Ingestion and crafted Azure Databricks notebook for transforming
+          ingested data.
+        </h3>
+        <h3>
+          🔶 Supported in the backend development of Data Ingestion module using
+          Flask, while also enabling shadow resources in the team.
+        </h3>
       </div>
-      <div class="sec-2">
-        <h3>heading 3</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
+      <div class="resume-divs">
+        <h2>Senior Analyst (Capgemini, Bengaluru)</h2>
+        <h4>Jan 2023 - Dec 2023</h4>
+        <h3>
+          🔶 Efficiently accomplished the implementation and delivered CDF(Cloud
+          Data Foundation) modules for IDEA across AWS, GCP and Azure 2.0,
+          ensuring seamless execution and delivering results on schedule.
+        </h3>
+        <h3>
+          🔶 Contributed to comprehensive RnD for Microsoft Fabric POC and
+          implemented Fabric UI within the IDEA WebApp Azure Environment,
+          focusing on Data Ingestion and creating essential data pipelines.
+        </h3>
+        <h3>
+          🔶 Played a crucial role in expanding the CDF into the GCP Wells Fargo
+          branch, diligently addressing code issues and bugs to maintain optimal
+          performance.
+        </h3>
       </div>
-      <div class="sec-3">
-        <h3>heading 3</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
+      <div class="resume-divs">
+        <h2>Analyst (Capgemini, Gurugram)</h2>
+        <h4>Aug 2021 - Dec 2022</h4>
+        <h3>
+          🔶 Worked as a Frontend React Developer at Project: IDEA by Capgemini,
+          contributed to developing a responsive and modern web application UI
+          for the IDEA on Azure.
+        </h3>
+        <h3>
+          🔶 Successfully delivered the CDF modules for IDEA across AWS and
+          Azure 2.0 within the designated time frame, ensuring seamless
+          functionality and high-quality code.
+        </h3>
+        <h3>
+          🔶 Utilized React Hooks and Redux for state management, conducted unit
+          testing using Jest and Enzyme frameworks, and resolved code issues
+          identified by SonarQube.
+        </h3>
       </div>
     </div>
-
-    <!-- Technologies -->
-    <div class="blue tech-grid" id="skills">
+    <!-- Skills Section -->
+    <div class="section tech-grid" id="skills">
       <div class="grid-item">
-        <img src="./img/data_storage_2_2.png" alt="img" />
+        <img src="./img/HTML5_logo.svg" alt="img" />
       </div>
       <div class="grid-item">
-        <img src="./img/desktop_analytics_2.png" alt="img" />
-      </div>
-      <div class="grid-item"><img src="./img/files_2.png" alt="img" /></div>
-      <div class="grid-item">
-        <img src="./img/monitor_coding_2.png" alt="img" />
+        <img src="./img/CSS3_logo.svg" alt="img" />
       </div>
       <div class="grid-item">
-        <img src="./img/monitor_settings_2.png" alt="img" />
+        <img src="./img/JavaScript_logo.svg" alt="img" />
       </div>
-      <div class="grid-item"><img src="./img/server_2_2.png" alt="img" /></div>
-      <div class="grid-item"><img src="./img/server_3.png" alt="img" /></div>
       <div class="grid-item">
-        <img src="./img/server_safe_2.png" alt="img" />
+        <img src="./img/React-icon.svg" alt="img" />
+      </div>
+      <div class="grid-item">
+        <img src="./img/Node.js_logo.svg" alt="img" />
+      </div>
+      <div class="grid-item"><img src="./img/redux.svg" alt="img" /></div>
+      <div class="grid-item">
+        <img src="./img/MongoDB_Logo.svg" alt="img" />
+      </div>
+      <div class="grid-item">
+        <img src="./img/Python-logo.svg" alt="img" />
       </div>
     </div>
-
     <!-- Project Section -->
-    <div class="project-sec" id="project">
+    <div class="section project-sec" id="project">
       <div class="project-div">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          corrupti saepe eum quis laudantium fuga architecto hic, mollitia
-          accusantium in nesciunt, rem commodi, minus similique eligendi error
-          sint quo facere. 
-        </p>
+        <h1>Netflix</h1>
+        <h3>
+          Netflix clone project showcasing a responsive UI, search
+          functionality, and movie suggestions powered by GPT APIs.
+        </h3>
       </div>
-      <img src="./img/monitor_coding_2.png" alt="project_img">
+      <img src="./img/netflix-project.png" alt="project_img" />
     </div>
-
-    <!-- Footer -->
-    <footer class="zone yellow footer" id="contact">Footer</footer>
+    <!-- Footer Section -->
+    <footer class="section footer" id="contact">
+      <div class="main-footer">
+        <h2>Contact me</h2>
+        <div class="division-footer">
+          <ul>
+            <li>
+              <i
+                class="fa-brands fa-linkedin fa-2x"
+                onclick="window.open('https://www.linkedin.com/in/gagands07/')"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa-brands fa-github fa-2x"
+                onclick="window.open('https://github.com/gagancod3')"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-square-envelope fa-2x"
+                onclick="window.open('https://mail.google.com/mail/u/1/?view=cm&fs=1&to=gagandeepnayyar@gmail.com&tf=1')"
+              ></i>
+            </li>
+          </ul>
+        </div>
+        <div class="division-footer">
+          <h3>© 2024 copyright all rights reserved</h3>
+        </div>
+      </div>
+    </footer>
+    <!-- </div> -->
   </body>
 </html>
+<script src="index.js"></script>
+
+<!-- Particle JS scripts -->
+<!-- <script src="./particleJS/particles.js"></script>
+<script src="./particleJS/particleJson.js"></script> -->

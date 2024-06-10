@@ -1,40 +1,63 @@
-function calculateSettingAsThemeString(localStorageTheme, systemSettingDark) {
-    if (localStorageTheme !== null) {
-        return localStorageTheme;
-    }
-    if (systemSettingDark.matches) {
-        return "dark";
-    }
-    return "light";
-}
+const hamburgerClick = document.getElementById("navbar-toggle");
+const navBar = document.querySelector(".header");
+// const modeToggle = document.querySelector('.switch');
+const darkmodeToggle = document.querySelector("#darkmode-toggle");
+const UList = document.querySelector("#UList");
+const navLinks = document.querySelector(".link--a");
 
-const localStorageTheme = localStorage.getItem("theme");
-const systemSettingDark = window.matchMedia("(prders-color-scheme: dark)");
-
-let currentThemeSetting = calculateSettingAsThemeString(localStorageTheme, systemSettingDark);
-
-// target the button using the data attribute we added earlier
-const button = document.querySelector("[data-theme-toggle]");
-
-// event listener for button
-button.addEventListener("click", ()=>{
-    const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
-
-// update the button text
-const newBtnTxt = newTheme === "dark" ? "Change to light theme" : "Change to dark theme";
-button.innerText = newBtnTxt;
-
-// updating the attribute for button tag using setAttribute(<target_string>,<target_value>)
-button.setAttribute("aria-label",newBtnTxt);
-
-// update theme attribute on HTML to switch theme in CSS
-document.querySelector("html").setAttribute("data-theme", newTheme);
-
-// update in local storage
-localStorage.setItem("theme",newTheme);
-
-// update the currentThemeSetting in memory
-currentThemeSetting = newTheme;
-
+document.getElementById("nav--bar").addEventListener("click", function (e) {
+  // console.log('event',e);
+  e.preventDefault();
+  const target = e.target;
+  if (target.classList.contains("link--a")) {
+    const id = target.getAttribute("href").slice(1);
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  }
 });
 
+// console.log(navBar.getBoundingClientRect());
+
+// navbar toggle (mobile-view)
+const handleNavToggle = function () {
+  navLinks.map((ele) => {
+    ele.classList.toggle("active");
+  });
+  // console.log(coverSection);
+  coverSection.classList.toggle("cover-active");
+  // console.log('clicked');
+};
+hamburgerClick.addEventListener("click", handleNavToggle);
+
+// theme mode toggle
+
+// const handleModeToggle = function(){
+//     console.log('mode toggled')
+//     let element = document.body;
+//     element.classList.toggle('dark-mode');
+// }
+// modeToggle.addEventListener('click',handleModeToggle);
+
+/* css customprops detect the default automatically, but this makes sure the starting switch position also corresponds */
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  darkmodeToggle.checked = true;
+}
+
+/* These classes are for when a user decides to not go with their default setting */
+darkmodeToggle.addEventListener("change", () => {
+  if (darkmodeToggle.checked) {
+    document.body.classList.add("darkmode");
+    document.body.classList.remove("lightmode");
+    UList.classList.add("darkmode-nav");
+    UList.classList.remove("lightmode-nav");
+  } else {
+    document.body.classList.remove("darkmode");
+    document.body.classList.add("lightmode");
+    UList.classList.add("lightmode-nav");
+    UList.classList.remove("darkmode-nav");
+  }
+});
+
+// footer hover style class zoom effect (add later)
