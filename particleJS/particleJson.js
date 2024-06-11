@@ -7,14 +7,20 @@ particlesJS("particles-js", {
           "value_area": 800
         }
       },
+      "canvas": {
+        // Set height dynamically using window.innerHeight
+        "scl": function() {
+            return window.innerHeight;
+        }
+      },
       "color": {
-        "value": "#ffffff"
+        "value": "#FFC96F"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "#FFC96F"
         },
         "polygon": {
           "nb_sides": 5
@@ -31,7 +37,7 @@ particlesJS("particles-js", {
         }
       },
       "size": {
-        "value": 8,
+        "value": 5,
         "random": true,
         "anim": {
           "enable": false,
@@ -43,7 +49,7 @@ particlesJS("particles-js", {
       "line_linked": {
         "enable": true,
         "distance": 100,
-        "color": "#ffffff",
+        "color": "#FFC96F",
         "opacity": 0.9,
         "width": 3
       },

@@ -88,6 +88,7 @@ body {
   display: none;
 }
 .nav-links {
+  cursor: pointer;
   margin: 1%;
 }
 .nav-links:hover a {
@@ -165,7 +166,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 19%;
+  width: 15%;
   /* height: 50%; */
   background-image: linear-gradient(
     to bottom,
@@ -176,13 +177,13 @@ body {
 }
 .grid-item img {
   width: 70%;
-  height: 199px;
+  height: 159px;
   padding: 1rem;
   margin: 2rem;
 }
 .grid-item:hover {
   transition: 1s;
-  box-shadow: 5px 5px 3px rgb(100, 60, 6);
+  box-shadow: 5px 5px 3px rgb(74, 188, 30);
   /* transform: scale(1.01); */
 }
 
@@ -412,7 +413,7 @@ body {
   /* Skill Section */
   .grid-item {
     flex-direction: column;
-    width: 30%;
+    width: 25%;
   }
 
   /* Project section */
@@ -468,10 +469,15 @@ body {
     margin-bottom: 10%;
   }
   .grid-item {
-    flex-direction: column;
-    width: 70%;
+    flex-direction: row;
+    width: 40%;
   }
-
+  .grid-item img {
+    width: 80%;
+    height: 79px;
+    padding: 0rem;
+    margin: 2rem;
+  }
   /* Project section */
   .project-sec{
     flex-direction: column;
