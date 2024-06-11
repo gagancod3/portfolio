@@ -38,12 +38,13 @@ hamburgerClick.addEventListener("click", handleNavToggle);
 // modeToggle.addEventListener('click',handleModeToggle);
 
 /* css customprops detect the default automatically, but this makes sure the starting switch position also corresponds */
-if (
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches
-) {
-  darkmodeToggle.checked = true;
-}
+
+// if (
+//   window.matchMedia &&
+//   window.matchMedia("(prefers-color-scheme: dark)").matches
+// ) {
+//   darkmodeToggle.checked = true;
+// }
 
 /* These classes are for when a user decides to not go with their default setting */
 darkmodeToggle.addEventListener("change", () => {

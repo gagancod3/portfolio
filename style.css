@@ -54,11 +54,12 @@ body {
     to right,
     rgba(250, 149, 8, 0.9),
     rgba(0, 0, 0, 0.1)
+    /* ,rgba(250, 149, 8, 0.9) */
   );
-  color: #000;
 }
 .lightmode-nav li a {
   color: #000;
+  /* color: rgba(250, 149, 8, 0.9); */
 }
 .header li {
   list-style-type: none;
