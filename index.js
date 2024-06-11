@@ -3,7 +3,13 @@ const navBar = document.querySelector(".header");
 // const modeToggle = document.querySelector('.switch');
 const darkmodeToggle = document.querySelector("#darkmode-toggle");
 const UList = document.querySelector("#UList");
-const navLinks = document.querySelector(".link--a");
+// const navLinks = document.querySelector(".link--a");
+const navLinks = [...document.querySelectorAll(".nav-links")]; // stored the NodeList into array format using "..." operator
+const profileLinks = document.querySelector(".profile");
+const experienceLinks = document.querySelector(".experience");
+const skillLinks = document.querySelector(".skills");
+const projectLinks = document.querySelector(".project");
+// const contactLinks = document.querySelector(".contact");
 
 document.getElementById("nav--bar").addEventListener("click", function (e) {
   // console.log('event',e);
@@ -22,11 +28,14 @@ const handleNavToggle = function () {
   navLinks.map((ele) => {
     ele.classList.toggle("active");
   });
-  // console.log(coverSection);
-  coverSection.classList.toggle("cover-active");
-  // console.log('clicked');
+  // coverSection.classList.toggle("cover-active");
 };
 hamburgerClick.addEventListener("click", handleNavToggle);
+profileLinks.addEventListener('click', handleNavToggle);
+experienceLinks.addEventListener('click', handleNavToggle);
+skillLinks.addEventListener('click', handleNavToggle);
+projectLinks.addEventListener('click', handleNavToggle);
+// contactLinks.addEventListener('click', handleNavToggle);
 
 // theme mode toggle
 
