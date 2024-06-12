@@ -18,7 +18,6 @@
     <!-- Navbar -->
     <nav class="header" id="nav--bar">
       <ul id="UList" class="lightmode-nav">
-        <!-- <li class="nav-logo"><i class="glyphicon glyphicon-user"></i></li> -->
         <li class="nav-logo">GS</li>
         <li class="navbar-toggle" id="navbar-toggle">
           <i class="fas fa-bars"></i>
@@ -37,14 +36,23 @@
         </li>
         <li class="nav-links">
           <a onclick="window.open('https://drive.google.com/file/d/1emX-VYklUwTl3r-CW1zMavqfc-xEhShM/view')" class="link--a">View Resume</a>
-        </li>
-        <!-- <li class="nav-links">
-          <input type="checkbox" name="checkbox" class="switch">
-        </li> -->
       </ul>
     </nav>
     <!-- Cover Section -->
     <div class="section cover-section" id="cover">
+      <div class="container-only-for-centering">
+        <div class="darkmode-toggle-wrapper">
+          <input
+            type="checkbox"
+            id="darkmode-toggle"
+            aria-label="dark mode toggle"
+            class="darkmode-toggle-checkbox"
+          />
+          <div class="darkmode-toggle-circle"></div>
+          <span class="darkmode-toggle-emoji">🌙</span>
+          <span class="darkmode-toggle-emoji">☀️</span>
+        </div>
+      </div>
       <div class="cover-intro">
         <h1></h1>
         <h2>Hi, <span>I'm Gagan</span></h2>
@@ -60,19 +68,6 @@
         </h3>
       </div>
       <img class="cover-img" src="./img/gagan-avatar.jpeg" alt="cover_img" />
-      <div class="container-only-for-centering">
-        <div class="darkmode-toggle-wrapper">
-          <input
-            type="checkbox"
-            id="darkmode-toggle"
-            aria-label="dark mode toggle"
-            class="darkmode-toggle-checkbox"
-          />
-          <div class="darkmode-toggle-circle"></div>
-          <span class="darkmode-toggle-emoji">🌙</span>
-          <span class="darkmode-toggle-emoji">☀️</span>
-        </div>
-      </div>
     </div>
     <!-- Resume Section -->
     <div class="section resume-section" id="section">
