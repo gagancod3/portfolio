@@ -206,6 +206,7 @@ body {
   margin-bottom: 1rem;
 }
 .project-sec img {
+  cursor: pointer;
   width: 55%;
   height: 60%;
   border-radius: 2%;
@@ -215,14 +216,18 @@ body {
   position: relative;
   align-self: stretch;
 }
+.project-sec h4 a{
+  cursor: pointer;
+  color: rgb(250, 149, 8);
+}
 
-.project-sec img :hover {
+/* .project-sec img:hover {
   content: "Your Text Here";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* color: white; */
+  color: white;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -230,7 +235,7 @@ body {
   opacity: 0;
   transition: opacity 0.5s;
   pointer-events: none;
-}
+} */
 .project-div h1,
 h3 {
   margin-bottom: 3%;
